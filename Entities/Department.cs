@@ -6,15 +6,15 @@ namespace Course.Entities
 {
     class Department
     {
-        public string Nome { get; set; }
-        public Department()
+        public string Name { get; set; }//Nome do departamento
+        public Department()//Construtor padrão
         {
 
         }
 
-        public Department(string nome)
+        public Department(string name)
         {
-            Nome = nome;
+            Name= name;
         }
     }
 }

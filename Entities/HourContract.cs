@@ -8,7 +8,7 @@ namespace Course.Entities
     {
         public DateTime Date { get; set; }
         public double ValuePerHour { get; set; }
-        public int hours { get; set; }
+        public int Hours { get; set; }
 
 public HourContract()
         {
@@ -19,11 +19,11 @@ public HourContract()
         {
             Date = date;
             ValuePerHour = valuePerHour;
-            this.hours = hours;
+            Hours = hours;
         }
         public double TotalValue()
         {
-            return hours * ValuePerHour
+            return Hours * ValuePerHour;
         }
     }
 }
