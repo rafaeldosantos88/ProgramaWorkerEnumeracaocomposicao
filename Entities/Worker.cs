@@ -9,8 +9,8 @@ namespace Course.Entities
         public string Name { get; set; }//Nome do trabalhador
         public WorkerLevel Level { get; set; }//Nível do Trabalhador
         public double BaseSalary { get; set; }//Base Salarial do Trabralhador
-        public Department Department { get; set; }//Composição do departamento
-        public List<HourContract>Contracts { get; set; }=new List<HourContract>();//Composição Contrato em lista
+        public Department Department { get; set; }//Composição do departamento.O tipo é department com nome Department.
+        public List<HourContract>Contracts { get; set; }=new List<HourContract>();//Composição Contrato em lista aonde foi criado e instanciado
 
         public Worker()//Construtor padrão
         {
@@ -50,4 +50,4 @@ namespace Course.Entities
 
         
     }
-}
+
